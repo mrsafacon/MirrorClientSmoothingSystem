@@ -7,15 +7,14 @@
  - **Any Character Controller system**
 
 
-### Setup
- 
+## Setup
+
 Your input script should:
 - Monitor for changes in horizontal and vertical directions (i.e. WASD movement press or release) and character rotation (i.e. mouselook).
 - Send full NetInput (see NetInput.cs) upon any changes.
     - To Server using a Command
     - To Local ClientExtrapolation.cs
 - Apply Rotation immediately.
-
 
 Your Character Controller script should:
 - Take in NetInput to apply movement and rotation
@@ -32,3 +31,7 @@ Takes a stream of input changes and approximates the time to apply the input bas
 A simple interpolation implementation meant to be used alongside ClientExtrapolation.cs. Intended for the controlling client.
 
 **You will need another Interpolation solution to handle a player's perspective of other characters** This script doesn't handle rotation or have need for advanced interpolation techniques such as interpolation backtime.
+
+
+![Diagram](https://github.com/mrsafacon/MirrorClientSmoothingSystem/raw/origin/diagram.png)
+ 
