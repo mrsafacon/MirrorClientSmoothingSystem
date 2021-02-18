@@ -8,6 +8,7 @@
 
 
 ## Setup
+![Diagram](https://github.com/mrsafacon/MirrorClientSmoothingSystem/raw/origin/diagram.png)
 
 Your input script should:
 - Monitor for changes in horizontal and vertical directions (i.e. WASD movement press or release) and character rotation (i.e. mouselook).
@@ -33,5 +34,3 @@ A simple interpolation implementation meant to be used alongside ClientExtrapola
 **You will need another Interpolation solution to handle a player's perspective of other characters** This script doesn't handle rotation or have need for advanced interpolation techniques such as interpolation backtime.
 
 
-![Diagram](https://github.com/mrsafacon/MirrorClientSmoothingSystem/raw/origin/diagram.png)
- 
